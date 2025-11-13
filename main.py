@@ -12,7 +12,7 @@ alt_answer_list = []
 comparison_list = []
 
 for hypothesis in df['Гипотеза']:
-    result = run_pipeline(hypothesis, model_query_func=ollama_query_model, embedding_function=gemini_embedding)
+    result = run_pipeline(hypothesis, model_query_func=ollama_query_model, embedding_function=gemini_embedding) # Замените model_query_func в случае использования другой модели
     print(hypothesis)
     understanding_list.append(result["understanding"])
     key_concepts_list.append(result["key_concepts"])
