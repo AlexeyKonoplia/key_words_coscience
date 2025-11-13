@@ -1,0 +1,6 @@
+pandas
+python-dotenv
+scikit_learn
+google-generativeai
+ipykernel
+openpyxl
